@@ -2,7 +2,8 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class LinkedList<E> implements ListElements<E> {
+//This data structure has been implemented for the song libary
+public class LinkedList<E> implements ListElements<E> { //This is a generic implementation of the list elements which also implemnts the elements of the list. 
 
     private Node<E> firstNode;   //First node in the list.
     private Node<E> lastNode;   //Last node in the list.
@@ -223,7 +224,7 @@ public class LinkedList<E> implements ListElements<E> {
         E element = i.next();   //This is where we get that element.
         i.remove(); //This is where we remove that element from the list after getting it above.
 
-        return element;
+        return element; //This returns the element back. 
     }
 
 }
